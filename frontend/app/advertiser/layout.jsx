@@ -10,23 +10,8 @@ function layout({children}) {
     <div className="flex h-full max-h-screen flex-col gap-2">
       <div className="flex h-[60px] items-center border-b px-6">
         <a className="flex items-center gap-2 font-semibold" href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            className="h-6 w-6"
-          >
-            <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
-            <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
-            <path d="M12 3v6"></path>
-          </svg>
-          <span className="">Publisher Dashboard</span>
+  
+          <span className="">Advertiser Dashboard</span>
         </a>
 
         <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground ml-auto h-8 w-8">
@@ -69,53 +54,53 @@ function layout({children}) {
               <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
-            Content Overview
+            Overview
           </a>
-         <Link  href='/publisher/adspaces/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+         <Link  href='/advertiser/adcampaigns/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
           <span><FaShop/></span>
-         <span>Adspaces</span>
+         <span>Adcampaigns</span>
        
          </Link>
 
-         <Link  href='/publisher/orders/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+         <Link  href='/advertiser/orders/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
           <span><FaBasketShopping/></span>
          <span>Orders</span>
        
          </Link>
 
-         <Link  href='/publisher/offers/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+         <Link  href='/advertiser/offers/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
           <span><FaGifts /></span>
          <span>Offers</span>
        
          </Link>
 
         
-         <Link  href='/publisher/boostedads/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+         <Link  href='/advertiser/boostedads/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
           <span><FaBolt /></span>
          <span>Boosted Adspaces</span>
        
          </Link>
 
-         <Link  href='/publishers/messages/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+         <Link  href='/advertisers/messages/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
           <span><FaMessage /></span>
          <span>Messages</span>
        
          </Link>
 
-         <Link  href='/publisher/notifications/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+         <Link  href='/advertiser/notifications/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
           <span><FaBell /></span>
          <span>Notifications</span>
        
          </Link>
          
-         <Link  href='/publisher/withdraw'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+         <Link  href='/advertiser/withdraw'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
           <span><FaArrowDown /></span>
          <span>Withdraw</span>
        
          </Link>
 
           
-         <Link  href='/publisher/transactions/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+         <Link  href='/advertiser/transactions/'     className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-200 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
           <span><FaList /></span>
          <span>Transaction history</span>
        
@@ -193,9 +178,7 @@ function layout({children}) {
       </button>
     </header>
     <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
-      <div className="flex items-center gap-4">
-        <h1 className="font-semibold text-lg md:text-xl">Dashboard</h1>
-      </div>
+    
       {/*  */}
     {children}
     </main>
